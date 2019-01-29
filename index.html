@@ -1,4 +1,4 @@
-    <!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wi-feedback.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" async type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=jQuery.fn.lcwMapInit" async type="text/javascript"></script>
     <script src="js/index.js"></script>
-    <title>Document</title>
+    <title>LC Waikiki Беларусь</title>
 </head>
 <body>
     <header class="navbar fixed-top">
@@ -24,7 +24,7 @@
         <a href="#sales">Главная</a>
         <a href="#about-us">О нас</a>
         <a href="#our-shops">Наши магазины</a>
-        <a href="#">Контакты</a>
+        <a href="#contacs">Контакты</a>
         <a href="#">????</a>
     </header>
 
@@ -60,36 +60,58 @@
     <section id="our-shops">
         <h2 class="text-center">На данный момент в Беларуси 14 магазинов LC Waikiki</h2>
 
-        <!--<div class="input-group" id="choose-on-map">-->
-            <!--<select class="custom-select shops">-->
-                <!--<option value="outlet" selected>ТЦ Outleto, Минск, просп. Жукова, 44</option>-->
-                <!--<option value="expo">ТЦ Экспобел, Минск, пересечение Логойского тракта и МКАД</option>-->
-                <!--<option value="magnit">ТЦ Магнит, Минск, ул. Шаранговича, 25</option>-->
-                <!--<option value="skala">ТЦ Скала, Минск, ул. Петра Глебки, 5</option>-->
-                <!--<option value="gallery">ТРЦ Galleria, Минск, просп. Победителей, 9</option>-->
-                <!--<option value="galileo">ТЦ Galileo, Минск, ул. Бобруйская, 6</option>-->
-                <!--<option value="momo">ТЦ Momo, Минск, просп. Партизанский, 150А</option>-->
-                <!--<option value="mogEvro">Могилёв, Евроопт, ул. Гагарина, 79</option>-->
-                <!--<option value="mogParkCity">Могилёв, ТЦ Парк Сити, микрорайон Казимировка, Минское шоссе, 31</option>-->
-                <!--<option value="brCum">Брест, ЦУМ, просп. Машерова, 17</option>-->
-                <!--<option value="brEvro">Брест, Евроопт, Варшавское шоссе, 11</option>-->
-                <!--<option value="gomSecret">Гомель, ТЦ Секрет, ул. Гагарина, 65</option>-->
-                <!--<option value="polManej">Полоцк, ТРЦ Манеж, Вильнюсское шоссе, 1</option>-->
-                <!--<option value="grOldCity">Гродно, ТЦ Old City, ул. Дубко, 17</option>-->
-            <!--</select>-->
-            <!--<div class="input-group-append">-->
-                <!--<a href="#lcw-map-popup" class="btn btn-outline-secondary show-map">button</a>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="input-group" id="choose-on-map">
+            <select class="custom-select shops">
+                <option value="0" selected>ТЦ Outleto, Минск, просп. Жукова, 44</option>
+                <option value="1">ТЦ Экспобел, Минск, пересечение Логойского тракта и МКАД</option>
+                <option value="2">ТЦ Магнит, Минск, ул. Шаранговича, 25</option>
+                <option value="3">ТЦ Скала, Минск, ул. Петра Глебки, 5</option>
+                <option value="4">ТРЦ Galleria, Минск, просп. Победителей, 9</option>
+                <option value="5">ТЦ Galileo, Минск, ул. Бобруйская, 6</option>
+                <option value="6">ТЦ Momo, Минск, просп. Партизанский, 150А</option>
+                <option value="7">Могилёв, Евроопт, ул. Гагарина, 79</option>
+                <option value="8">Могилёв, ТЦ Парк Сити, микрорайон Казимировка, Минское шоссе, 31</option>
+                <option value="9">Брест, ЦУМ, просп. Машерова, 17</option>
+                <option value="10">Брест, Евроопт, Варшавское шоссе, 11</option>
+                <option value="11">Гомель, ТЦ Секрет, ул. Гагарина, 65</option>
+                <option value="12">Полоцк, ТРЦ Манеж, Вильнюсское шоссе, 1</option>
+                <option value="13">Гродно, ТЦ Old City, ул. Дубко, 17</option>
+            </select>
+            <div class="input-group-append">
+                <a href="#lcw-map-popup" class="btn btn-outline-secondary show-map">button</a>
+            </div>
+        </div>
 
-        <!--<div id="lcwMap" class="text-center">-->
+        <div id="lcwMap" class="text-center">
 
-        <!--</div>-->
-        <!---->
+        </div>
+        
+    </section>
+    
+    <section id="contacts">
+        
+        <div class="row">
+            
+            <div id='all-shops-map' class="col"></div>
+            
+            <div id="lcw-fb" class="col">
+                
+                <h2>Обратная связь</h2>
+                <p>Заполните контактные данные, и мы свяжемся с вами в кратчайшие сроки:</p>
+                <input type="text" maxlength="50" name="Имя" placeholder="Ваше Имя..." />
+                <input type="tel" maxlength="50" name="Телефон" placeholder="Ваш Телефон..." required />
+                <input type="email" maxlength="50" name="Почта" placeholder="Ваш E-mail..." />
+                <textarea maxlength="500" name="Сообщение" placeholder="Сообщение..."></textarea>
+                <button>Отправить</button>
+                
+            </div>
+            
+        </div>
+        
     </section>
 
     <!--<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda beatae delectus dolorem dolores expedita fuga ipsam minus perspiciatis possimus quidem quod sapiente sed tenetur, ullam. Aliquam culpa odit rem.</span><span>Autem deleniti deserunt dignissimos doloremque, impedit laudantium magnam maiores minus, nulla similique sit, vero. Alias esse, ex exercitationem fugit porro reiciendis voluptates? Dicta dignissimos eligendi ipsa porro quo temporibus unde.</span><span>Animi consequatur exercitationem expedita explicabo nihil officia quas! Impedit natus rerum sed suscipit! Architecto asperiores commodi cupiditate, et exercitationem expedita impedit ipsam iste itaque non quam reprehenderit repudiandae vero voluptates.</span><span>Alias animi aspernatur autem consequatur cupiditate dolorem ea eius et fugiat itaque magni maiores minima minus molestiae nemo officiis optio quaerat quas quisquam quos saepe, sequi suscipit temporibus ut voluptatum.</span><span>Ab cum excepturi harum modi optio perspiciatis quam, quasi repellendus sunt? Consequuntur corporis culpa cumque earum eligendi, enim eum exercitationem magnam modi, nam nihil, porro quos suscipit temporibus ut voluptates.</span><span>Aperiam aut est impedit molestiae nulla quibusdam reiciendis, vel vitae. Ad, suscipit, vitae. At delectus eum illum magnam minima necessitatibus nostrum perspiciatis quasi, ratione repellendus sint, tempora tenetur ut vitae.</span><span>Deleniti itaque labore quidem ratione. Ab deleniti eos possimus voluptatem voluptatibus? Culpa excepturi laudantium molestias nobis nulla praesentium quisquam, vel voluptate. Asperiores deserunt eaque excepturi impedit ipsam repellat soluta vitae.</span><span>Adipisci amet culpa excepturi fugiat illum, pariatur provident quasi qui ratione voluptas. Assumenda consectetur deleniti dolore doloribus, eum facilis fuga id iusto officia quibusdam quidem ratione rerum sapiente tenetur, voluptatem!</span><span>Ab ad enim fugiat itaque perspiciatis quam quisquam quo reiciendis rem reprehenderit, soluta tempore veritatis voluptatem. A aspernatur beatae, commodi dolore eaque in molestiae, numquam optio quam reiciendis, reprehenderit sunt.</span><span>Accusantium aliquam aliquid architecto, autem beatae cum cumque dolore, ea eius explicabo facilis fuga itaque laborum maxime minima molestias mollitia perferendis placeat praesentium quod ratione sapiente tempore voluptatibus! Impedit, qui?</p>-->
 
-    <!--<div id="lcw-map-popup" class="map-popup"></div>-->
+    <div id="lcw-map-popup" class="map-popup"></div>
 </body>
 </html>

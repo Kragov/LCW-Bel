@@ -1,0 +1,231 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.876664, 27.517885]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Аутлет",
+                "balloonContentFooter": "Минск, просп. Жукова, 44",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+            
+
+            },
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.964145, 27.623888]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Экспобел",
+                "balloonContentFooter": "Минск, Пересечение Логойского тракта и МКАД",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.883520, 27.448046]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Магнит",
+                "balloonContentFooter": "Минск, ул. Шаранговича, 25",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.964145, 27.623888]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Скала",
+                "balloonContentFooter": "Минск, ул. Петра Глебки, 5",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.908521, 27.548424]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Галлерея",
+                "balloonContentFooter": "Минск, просп. Победителей, 9",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.890554, 27.553826]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Галилео",
+                "balloonContentFooter": "Минск, ул. Бобруйская, 6",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.859902, 27.674133]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Момо",
+                "balloonContentFooter": "Минск, просп. Партизанский, 150А",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.880124, 30.317341]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Могилёв Евроопт",
+                "balloonContentFooter": "Могилёв, ул. Гагарина, 79",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.935638, 30.257639]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Могилёв Парк Сити",
+                "balloonContentFooter": "Могилёв, микрорайон Казимировка, Минское шоссе, 31",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [52.085570, 23.694472]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Брест ЦУМ",
+                "balloonContentFooter": "Брест, просп. Машерова, 17",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [52.075419, 23.717976]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Брест Евроопт",
+                "balloonContentFooter": "Брест, Варшавское шоссе, 11",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [52.424160, 30.996746]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Гомель Секрет",
+                "balloonContentFooter": "Гомель, ул. Гагарина, 65",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [55.472480, 28.748997]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Полоцк Манеж",
+                "balloonContentFooter": "Полоцк, Вильнюсское шоссе, 1",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+            },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.701694, 23.835179]
+            },
+            "properties": {
+                "iconCaption": "LC Waikiki Гродно Олд Сити",
+                "balloonContentFooter": "Гродно, ул. Дубко, 17",
+                "hintContent": "Магазин LC Waikiki",
+                "balloonContentHeader": "LC Waikiki",
+                "balloonContentBody": "Магазин модной одежды"
+            }
+
+        }
+
+    ]
+}
