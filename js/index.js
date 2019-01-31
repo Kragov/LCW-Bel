@@ -1,5 +1,5 @@
 (function ($) {
-    $(document).ready(function (){
+    $(document).ready(function () {
 
         //Карусель скидок
 
@@ -12,13 +12,13 @@
         });
 
         // Описываем функцию, которая убирает навигацию на определённом расстоянии скролла вниз
-    
+
 
         let prevWindPos = 0;
 
         $(window).on('scroll', function () {
 
-            let curWindPos = $(window).scrollTop()
+            let curWindPos = $(window).scrollTop();
 
             if (curWindPos > 200) {
 
@@ -29,54 +29,72 @@
 
         //Плавный скролл
 
-        let lcwNav = $('.navbar')
+        let lcwNav = $('.navbar');
 
         lcwNav.find('a').click(function (e) {
             let linkTrgt = $($(this).attr('href'))
 
             if (linkTrgt.length > 0) {
 
-                e.preventDefault()
+                e.preventDefault();
 
-                let offset = linkTrgt.offset().top
+                let offset = linkTrgt.offset().top;
 
                 $('body, html').animate({
-                        scrollTop: offset
-                    }, 750)
+                    scrollTop: offset
+                }, 750)
             }
-        })
+        });
 
         // Яндекс.Карта
 
 
-        
         $.fn.lcwMapInit = function () {
-            
+
             let lcwGlobalMap = new ymaps.Map('all-shops-map', {
-                center: [53.908521, 27.548424],
-                zoom: 14
-            }),
+                    center: [53.903459, 27.560089],
+                    zoom: 12
+                }),
                 ObjectManager = new ymaps.ObjectManager({
                     clusterize: true
-                })                    
-            
-            lcwGlobalMap.geoObjects.add(ObjectManager)
-            
+                });
+
+            lcwGlobalMap.geoObjects.add(ObjectManager);
+
             $.ajax({
                 url: "json/adresses.json"
-            }).done(function(data) {
+            }).done(function (data) {
                 ObjectManager.add(data)
             })
-            
-        }                    
-        
+
+            $('.show-map').click(function () {
+
+                let jsonShops = $.ajax({
+                    url: 'json/adresses.json',
+                    dataType: 'json'
+                }).done(function (data) {
+
+                    let shopId = $('.shops').val()
+
+                    lcwGlobalMap.setCenter(data.features[parseInt(shopId)].geometry.coordinates, 15)
+
+                })
+
+
+
+
+
+            })
+
+        };
+
         //Окно обратной связи  https://github.com/dmitry-markevich/wi-feedback
-        
-        
+
+
         $('#lcw-fb').wiFeedBack({
             fbScript: 'blocks/wi-feedback.php',
             fbLink: false,
             fbColor: '#595fff'
         })
-
+    })
 })(jQuery);

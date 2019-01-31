@@ -9,7 +9,6 @@ header {
 
 .navbar {
     font-size: 0;
-    /*padding: 5px 20px;*/
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: .5s;
@@ -163,6 +162,13 @@ header img {
     margin-top: 100px;
 }
 
+#all-shops-map {
+    margin: 30px auto 0;
+    min-width: 700px;
+    max-width: 1000px;
+    height: 500px;
+}
+
 #choose-on-map {
     margin: 0 auto;
     width: 50%;
@@ -179,4 +185,12 @@ header img {
 
 #lcw-map-popup {
     height: 500px;
+}
+
+#lcw-fb {
+    margin-top: 50px;
+}
+
+#choose-on-map {
+    margin-top: 20px;
 }
