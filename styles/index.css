@@ -147,7 +147,7 @@ header img {
 
 #about-us > p {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 #about-us h3 {
@@ -193,4 +193,36 @@ header img {
 
 #choose-on-map {
     margin-top: 20px;
+}
+
+.communicate-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 30px;    
+    background-color: rgba( 0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 0 10px 1px black;
+    transition: 0.5s;
+}
+
+.communicate-btn:hover {
+    cursor: pointer;
+    background-color: rgba( 0, 0, 0, 1);
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 100px;
+    height: 50px;
+    background-color: #1f49b6;
+    color: #fff;
+}
+
+footer div {
+    padding-top: 15px;
+    text-align: center;
 }

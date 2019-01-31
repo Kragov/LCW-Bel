@@ -50,15 +50,24 @@
 
 
         $.fn.lcwMapInit = function () {
+            
+            let lcwMapOptions = {
+                center: [53.903459, 27.560089],
+                zoom: 12,
+                controls: ['fullscreenControl', 'zoomControl']                
+            }
+            
+            if (window.innerWidth < 768) {
+                lcwMapOptions.behaviors = ['multiTouch'];
+            } else {
+                lcwMapOptions.behaviors = ['drag'];
+            }
 
-            let lcwGlobalMap = new ymaps.Map('all-shops-map', {
-                    center: [53.903459, 27.560089],
-                    zoom: 12
-                }),
+            let lcwGlobalMap = new ymaps.Map('all-shops-map', lcwMapOptions),
                 ObjectManager = new ymaps.ObjectManager({
                     clusterize: true
-                });
-
+                });            
+            
             lcwGlobalMap.geoObjects.add(ObjectManager);
 
             $.ajax({
@@ -80,10 +89,6 @@
 
                 })
 
-
-
-
-
             })
 
         };
@@ -93,8 +98,10 @@
 
         $('#lcw-fb').wiFeedBack({
             fbScript: 'blocks/wi-feedback.php',
-            fbLink: false,
+            fbLink: '.communicate-btn',
             fbColor: '#595fff'
         })
+        
+        
     })
 })(jQuery);
